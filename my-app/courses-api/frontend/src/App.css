@@ -1,0 +1,80 @@
+/* Flexbox container for the forms */
+.app-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Adjust gap as needed */
+  padding: 20px;
+}
+
+/* Individual form styling */
+.form-container {
+  flex: 1; /* Each form will take up equal width */
+  max-width: 45%; /* Ensure forms don't get too wide */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds subtle shadow for depth */
+}
+
+/* Headings */
+h2, h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Input and textarea styles */
+input, textarea {
+  width: 80%; /* Make inputs and textareas fill the container */
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Error and success messages */
+.error-message, .success-message {
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.error-message {
+  color: #d9534f; /* Bootstrap error color */
+  background-color: #f2dede; /* Light red background */
+  border: 1px solid #d9534f;
+}
+
+.success-message {
+  color: #5bc0de; /* Bootstrap success color */
+  background-color: #d9edf7; /* Light blue background */
+  border: 1px solid #5bc0de;
+}
+
+.course-details {
+  margin-top: 20px;
+}
